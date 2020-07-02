@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/navItemNews"
+                android:icon="@drawable/news_item"
+                android:title="@string/drawer_itemf"/>
+        <item
+                android:id="@+id/navItemWbSearch"
+                android:icon="@drawable/waybill_item"
+                android:title="@string/drawer_items" />
+        <item
+            android:id="@+id/navItemLogout"
+            android:icon="@drawable/logout_item"
+            android:title="@string/logout"/>
+    </group>
+</menu>

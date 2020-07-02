@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "992361803793",
+    "firebase_url": "https://mgltrackandtrace.firebaseio.com",
+    "project_id": "mgltrackandtrace",
+    "storage_bucket": "mgltrackandtrace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992361803793:android:f19ceccd59d0699ceb41b0",
+        "android_client_info": {
+          "package_name": "com.sh.accountkittest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992361803793-i1h15nk4kj3163fsaoif6ibduk1qocjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sh.accountkittest",
+            "certificate_hash": "0a4f0a84bd19d68c93286c302eb5e9ab799ef1b1"
+          }
+        },
+        {
+          "client_id": "992361803793-c3m81q7k6dl846rqmutmn1f9te7kalhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdGg2yb6-xGfovBzbI4bRUJ1eYlCwQva0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992361803793-c3m81q7k6dl846rqmutmn1f9te7kalhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

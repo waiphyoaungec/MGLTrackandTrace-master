@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.sh.mgltrackandtrace">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+            android:name="com.sh.mgltrackandtrace.core.SampleApplicationKt"
+            android:allowBackup="true"
+            android:hardwareAccelerated="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/appname"
+            android:largeHeap="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".view.activity.ConfirmActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".view.activity.RegisterResetPage"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".view.activity.RecoveryPasswordActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/MaterialAppTheme" />
+        <activity
+                android:name=".view.activity.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".view.activity.LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".view.activity.HomeActivity"
+                android:label="@string/title_activity_home"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".view.activity.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name="com.facebook.accountkit.ui.AccountKitActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppLoginTheme"
+                tools:replace="android:theme" />
+        <activity
+                android:name=".view.activity.ErrorActivity"
+                android:label="@string/action_bar_title_hello"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".view.activity.TokenActivity"
+                android:label="@string/action_bar_title_hello"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".view.activity.RegisterActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+        <activity
+                android:name=".view.activity.DetailActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/app_id" />
+        <meta-data
+                android:name="com.facebook.accountkit.ApplicationName"
+                android:value="@string/appname" />
+        <meta-data
+                android:name="com.facebook.accountkit.ClientToken"
+                android:value="@string/client_token" />
+    </application>
+
+</manifest>

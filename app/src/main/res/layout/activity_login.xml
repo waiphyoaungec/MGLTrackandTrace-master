@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#ffff00">
+
+    <ProgressBar
+            android:id="@+id/loginProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/appname"
+            app:layout_constraintVertical_bias="0.045"
+            app:layout_constraintHorizontal_bias="0.495"/>
+
+    <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_95"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.33"
+            app:layout_constraintHorizontal_bias="0.02"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp"
+                                                   android:layout_height="wrap_content"
+                                                   app:layout_constraintBottom_toBottomOf="parent"
+                                                   app:layout_constraintLeft_toRightOf="@+id/txtPhone"
+                                                   app:layout_constraintRight_toRightOf="parent"
+                                                   app:layout_constraintTop_toTopOf="parent"
+                                                   app:layout_constraintVertical_bias="0.335"
+    android:id="@+id/tilphone">
+        <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:maxLength="14"
+                android:layout_marginRight="20dp"
+                android:hint="09 "
+                android:imeOptions="actionGo"
+                android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp"
+                                                   android:layout_height="wrap_content"
+                                                   app:layout_constraintLeft_toRightOf="@+id/txtPhone"
+                                                   app:layout_constraintRight_toRightOf="parent"
+                                                   app:layout_constraintTop_toBottomOf="@+id/tilphone"
+                                                   app:passwordToggleEnabled="true"
+                                                   android:hint="Enter Password">
+        <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/txtPhone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            android:background="#ff3d00"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            app:layout_constraintVertical_bias="0.568"/>
+    <TextView
+            android:id="@+id/txtforgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/forgot"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.6404"
+    app:layout_constraintHorizontal_bias="0.7"/>
+
+    <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/register"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.753"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

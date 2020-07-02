@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/custom_toolbar</item>
+        <item name="android:actionMenuTextColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MaterialAppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <item name="com_accountkit_primary_color">#c4c200</item>
+        <item name="com_accountkit_primary_text_color">@android:color/white</item>
+        <item name="com_accountkit_secondary_text_color">@color/colorAccent</item>
+        <item name="com_accountkit_secondary_color">@android:color/transparent</item>
+        <item name="com_accountkit_status_bar_color">#c4c200</item>
+        <item name="com_accountkit_button_background_color">@color/colorAccent</item>
+        <item name="com_accountkit_button_border_color">@color/colorAccent</item>
+        <item name="com_accountkit_button_disabled_background_color">#535cca</item>
+        <item name="com_accountkit_background">@drawable/register_bg</item>
+
+        <item name="com_accountkit_input_accent_color">?attr/com_accountkit_primary_color</item>
+        <item name="com_accountkit_input_border_color">?attr/com_accountkit_primary_color</item>
+        <item name="com_accountkit_background_color">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="custom_toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="titleTextColor">@color/cardview_light_background</item>
+    </style>
+</resources>
